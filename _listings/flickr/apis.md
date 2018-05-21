@@ -1,5 +1,6 @@
 ---
 name: Flickr
+x-slug: flickr
 description: Flickr (pronounced flicker) is an image hosting and video hosting website,
   and web services suite that was created by Ludicorp in 2004 and acquired by Yahoo
   in 2005. In addition to being a popular website for users to share and embed personal
@@ -9,43 +10,329 @@ description: Flickr (pronounced flicker) is an image hosting and video hosting w
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
 x-kinRank: "9"
 x-alexaRank: ""
-tags:
-- Stack Network
-- Stack
-- Photos
-- Photo API
-- Photo
-- My API Stack
-- Media
-- Imports
-- Images
-- Getting Started
-created: "2018-03-25"
-modified: "2018-03-25"
-url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/apis.yaml
+tags: Flickr
+created: "2018-05-21"
+modified: "2018-05-21"
+url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/apis.md
 specificationVersion: "0.14"
 apis:
+- name: Flickr Get Favorite List
+  x-api-slug: flickr
+  description: Returns a list of the user's favorite photos. Only photos which the
+    calling user has permission to see are returned.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.favorites.getList
+  tags: Photos,Favorites
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrfavoritesgetlist-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrfavoritesgetlist-get-openapi.md
+- name: Flickr Get People Photos
+  x-api-slug: flickr
+  description: Return photos from the given user's photostream
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.people.getPhotos
+  tags: Photos,People
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrpeoplegetphotos-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrpeoplegetphotos-get-openapi.md
+- name: Flickr Get Photo Sets
+  x-api-slug: flickr
+  description: Returns the albums belonging to the specified user
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.photosets.getList
+  tags: Photos
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosetsgetlist-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosetsgetlist-get-openapi.md
+- name: Flickr Get Favorite Context
+  x-api-slug: flickr
+  description: Returns next and previous favorites for a photo in a user's favorites
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.favorites.getContext
+  tags: Photos,Favorites
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrfavoritesgetcontext-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrfavoritesgetcontext-get-openapi.md
+- name: Flickr Get Groups
+  x-api-slug: flickr
+  description: Get information about a group
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.groups.getInfo
+  tags: Photos,Groups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsgetinfo-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsgetinfo-get-openapi.md
+- name: Flickr Get Group Pool Photos
+  x-api-slug: flickr
+  description: Returns a list of pool photos for a given group
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.groups.pools.getPhotos
+  tags: Photos,Groups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupspoolsgetphotos-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupspoolsgetphotos-get-openapi.md
+- name: Flickr Get Group Topic List
+  x-api-slug: flickr
+  description: Get a list of discussion topics in a group.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.groups.discuss.topics.getList
+  tags: Photos,Groups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsdiscusstopicsgetlist-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsdiscusstopicsgetlist-get-openapi.md
+- name: Flickr Get Group Replies
+  x-api-slug: flickr
+  description: Get information on a group topic reply
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.groups.discuss.replies.getInfo
+  tags: Photos,Groups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsdiscussrepliesgetinfo-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsdiscussrepliesgetinfo-get-openapi.md
+- name: Flickr Get Group Topic Info
+  x-api-slug: flickr
+  description: Get information about a group discussion topic
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.groups.discuss.topics.getInfo
+  tags: Photos,Groups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsdiscusstopicsgetinfo-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsdiscusstopicsgetinfo-get-openapi.md
+- name: Flickr Get Group Pools
+  x-api-slug: flickr
+  description: Returns next and previous photos for a photo in a group pool
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.groups.pools.getContext
+  tags: Photos,Groups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupspoolsgetcontext-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupspoolsgetcontext-get-openapi.md
+- name: Flickr Get Photo Lists
+  x-api-slug: flickr
+  description: Returns next and previous photos in a photo list
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.photolist.getContext
+  tags: Photos,Lists
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotolistgetcontext-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotolistgetcontext-get-openapi.md
+- name: Flickr Get Photos
+  x-api-slug: flickr
+  description: Returns next and previous photos for a photo in a photostream
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.photos.getContext
+  tags: Photos
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetcontext-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetcontext-get-openapi.md
+- name: Flickr Get Photo Licenses
+  x-api-slug: flickr
+  description: Fetches a list of available photo licenses for Flickr
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.photos.licenses.getInfo
+  tags: Photos,Search
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotoslicensesgetinfo-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotoslicensesgetinfo-get-openapi.md
+- name: Flickr Get People
+  x-api-slug: flickr
+  description: Returns a person
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.people.getInfo
+  tags: Photos,People
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrpeoplegetinfo-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrpeoplegetinfo-get-openapi.md
+- name: Flickr Get Photo Exif
+  x-api-slug: flickr
+  description: Retrieves a list of EXIF/TIFF/GPS tags for a given photo. The calling
+    user must have permission to view the photo.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.photos.getExif
+  tags: Photos
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetexif-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetexif-get-openapi.md
+- name: Flickr Get Photo
+  x-api-slug: flickr
+  description: Returns a photo
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.photos.getInfo
+  tags: Photos,Licensing
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetinfo-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetinfo-get-openapi.md
+- name: Flickr Get Photo Set
+  x-api-slug: flickr
+  description: Returns next and previous photos for a photo in a set
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.photosets.getContext
+  tags: Photos
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosetsgetcontext-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosetsgetcontext-get-openapi.md
+- name: Flickr Get Photo Set Photos
+  x-api-slug: flickr
+  description: Returns a list of photos in an album.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.photosets.getPhotos
+  tags: Photos
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosetsgetphotos-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosetsgetphotos-get-openapi.md
+- name: Flickr Get Gallery Photos
+  x-api-slug: flickr
+  description: Returns a list of photos in a gallery.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.galleries.getPhotos
+  tags: Photos,Galleries
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgalleriesgetphotos-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgalleriesgetphotos-get-openapi.md
+- name: Flickr Photo Search
+  x-api-slug: flickr
+  description: Return a list of photos matching some criteria.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.photos.search
+  tags: Photos
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotossearch-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotossearch-get-openapi.md
+- name: Flickr Upload Photo
+  x-api-slug: flickr
+  description: Uploads a new photo to Flickr
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//upload
+  tags: Photo,Upload
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/upload-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/upload-post-openapi.md
+- name: 'Flickr '
+  x-api-slug: flickr
+  description: Returns photo sizes
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.photos.getSizes
+  tags: ~
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetsizes-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetsizes-get-openapi.md
+- name: 'Flickr '
+  x-api-slug: flickr
+  description: Echos the input parameters back in the response
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//rest?method=flickr.test.echo
+  tags: ~
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrtestecho-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrtestecho-get-openapi.md
+- name: 'Flickr '
+  x-api-slug: flickr
+  description: Returns an oauth token and oauth token secret
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//oauth/request_token
+  tags: ~
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/oauthrequest-token-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/oauthrequest-token-get-openapi.md
+- name: 'Flickr '
+  x-api-slug: flickr
+  description: Returns an access token
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
+  humanURL: http://www.flickr.com/
+  baseURL: ://api.flickr.com//services//oauth/access_token
+  tags: ~
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/oauthaccess-token-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/oauthaccess-token-get-openapi.md
 - name: Flickr
+  x-api-slug: flickr
   description: Flickr (pronounced flicker) is an image hosting and video hosting website,
     and web services suite that was created by Ludicorp in 2004 and acquired by Yahoo
-    in 2005
+    in 2005. In addition to being a popular website for users to share and embed personal
+    photographs, and effectively an online community, the service is widely used by
+    photo researchers and by bloggers to host images that they embed in blogs and
+    social media.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/flickr-logo.jpg
-  humanURL: ""
+  humanURL: http://www.flickr.com/
   baseURL: ://api.flickr.com//services
-  tags:
-  - Stack Network
-  - Stack
-  - Photos
-  - Photo API
-  - Photo
-  - My API Stack
-  - Media
-  - Imports
-  - Images
-  - Getting Started
+  tags: Flickr
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/upload-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/openapi.md
 x-common:
 - type: x-authentication
   url: https://www.flickr.com/services/api/auth.oauth.html
