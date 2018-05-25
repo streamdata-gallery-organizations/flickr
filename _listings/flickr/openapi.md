@@ -4,7 +4,7 @@ x-collection-name: Flickr
 x-complete: 1
 info:
   title: Flickr API Schema
-  description: a-subset-of-flickrs-api-defined-in-swagger-format
+  description: a-subset-of-flickrs-api-defined-in-swagger-format-
   termsOfService: https://www.flickr.com/services/api/tos/
   version: 1.0.0
 host: api.flickr.com
@@ -22,7 +22,7 @@ paths:
       description: Returns a list of the user's favorite photos. Only photos which
         the calling user has permission to see are returned.
       operationId: getFavoritesByPersonID
-      x-api-path-slug: restmethodflickrfavoritesgetlist-get
+      x-api-path-slug: restmethodflickr-favorites-getlist-get
       parameters:
       - in: query
         name: api_key
@@ -47,7 +47,7 @@ paths:
       summary: Get People Photos
       description: Return photos from the given user's photostream
       operationId: getMediaByPersonID
-      x-api-path-slug: restmethodflickrpeoplegetphotos-get
+      x-api-path-slug: restmethodflickr-people-getphotos-get
       parameters:
       - in: query
         name: api_key
@@ -82,7 +82,7 @@ paths:
       summary: Get Photo Sets
       description: Returns the albums belonging to the specified user
       operationId: getAlbumsByPersonID
-      x-api-path-slug: restmethodflickrphotosetsgetlist-get
+      x-api-path-slug: restmethodflickr-photosets-getlist-get
       parameters:
       - in: query
         name: api_key
@@ -102,7 +102,7 @@ paths:
       summary: Get Favorite Context
       description: Returns next and previous favorites for a photo in a user's favorites
       operationId: getFavoritesContextByID
-      x-api-path-slug: restmethodflickrfavoritesgetcontext-get
+      x-api-path-slug: restmethodflickr-favorites-getcontext-get
       parameters:
       - in: query
         name: api_key
@@ -121,7 +121,7 @@ paths:
       summary: Get Groups
       description: Get information about a group
       operationId: getGroupByID
-      x-api-path-slug: restmethodflickrgroupsgetinfo-get
+      x-api-path-slug: restmethodflickr-groups-getinfo-get
       parameters:
       - in: query
         name: api_key
@@ -142,7 +142,7 @@ paths:
       summary: Get Group Pool Photos
       description: Returns a list of pool photos for a given group
       operationId: getGroupPhotosByID
-      x-api-path-slug: restmethodflickrgroupspoolsgetphotos-get
+      x-api-path-slug: restmethodflickr-groups-pools-getphotos-get
       parameters:
       - in: query
         name: api_key
@@ -159,7 +159,7 @@ paths:
       summary: Get Group Topic List
       description: Get a list of discussion topics in a group.
       operationId: getGroupDiscussionsByID
-      x-api-path-slug: restmethodflickrgroupsdiscusstopicsgetlist-get
+      x-api-path-slug: restmethodflickr-groups-discuss-topics-getlist-get
       parameters:
       - in: query
         name: api_key
@@ -180,7 +180,7 @@ paths:
       summary: Get Group Replies
       description: Get information on a group topic reply
       operationId: getGroupTopicRepliesByID
-      x-api-path-slug: restmethodflickrgroupsdiscussrepliesgetinfo-get
+      x-api-path-slug: restmethodflickr-groups-discuss-replies-getinfo-get
       parameters:
       - in: query
         name: api_key
@@ -201,7 +201,7 @@ paths:
       summary: Get Group Topic Info
       description: Get information about a group discussion topic
       operationId: getGroupTopicByID
-      x-api-path-slug: restmethodflickrgroupsdiscusstopicsgetinfo-get
+      x-api-path-slug: restmethodflickr-groups-discuss-topics-getinfo-get
       parameters:
       - in: query
         name: api_key
@@ -220,7 +220,7 @@ paths:
       summary: Get Group Pools
       description: Returns next and previous photos for a photo in a group pool
       operationId: getGroupPhotosByID
-      x-api-path-slug: restmethodflickrgroupspoolsgetcontext-get
+      x-api-path-slug: restmethodflickr-groups-pools-getcontext-get
       parameters:
       - in: query
         name: api_key
@@ -239,7 +239,7 @@ paths:
       summary: Get Photo Lists
       description: Returns next and previous photos in a photo list
       operationId: getPhotolistContextByID
-      x-api-path-slug: restmethodflickrphotolistgetcontext-get
+      x-api-path-slug: restmethodflickr-photolist-getcontext-get
       parameters:
       - in: query
         name: api_key
@@ -258,7 +258,7 @@ paths:
       summary: Get Photos
       description: Returns next and previous photos for a photo in a photostream
       operationId: getPhotostreamContextByID
-      x-api-path-slug: restmethodflickrphotosgetcontext-get
+      x-api-path-slug: restmethodflickr-photos-getcontext-get
       parameters:
       - in: query
         name: api_key
@@ -274,7 +274,7 @@ paths:
       summary: Get Photo Licenses
       description: Fetches a list of available photo licenses for Flickr
       operationId: getLicenseByID
-      x-api-path-slug: restmethodflickrphotoslicensesgetinfo-get
+      x-api-path-slug: restmethodflickr-photos-licenses-getinfo-get
       parameters:
       - in: query
         name: api_key
@@ -289,7 +289,7 @@ paths:
       summary: Get People
       description: Returns a person
       operationId: getPersonByID
-      x-api-path-slug: restmethodflickrpeoplegetinfo-get
+      x-api-path-slug: restmethodflickr-people-getinfo-get
       parameters:
       - in: query
         name: api_key
@@ -307,7 +307,7 @@ paths:
       description: Retrieves a list of EXIF/TIFF/GPS tags for a given photo. The calling
         user must have permission to view the photo.
       operationId: getPhotoExifByID
-      x-api-path-slug: restmethodflickrphotosgetexif-get
+      x-api-path-slug: restmethodflickr-photos-getexif-get
       parameters:
       - in: query
         name: api_key
@@ -325,7 +325,7 @@ paths:
       summary: Get Photo
       description: Returns a photo
       operationId: getPhotoByID
-      x-api-path-slug: restmethodflickrphotosgetinfo-get
+      x-api-path-slug: restmethodflickr-photos-getinfo-get
       parameters:
       - in: query
         name: api_key
@@ -342,7 +342,7 @@ paths:
       summary: Get Photo Set
       description: Returns next and previous photos for a photo in a set
       operationId: getAlbumContextByID
-      x-api-path-slug: restmethodflickrphotosetsgetcontext-get
+      x-api-path-slug: restmethodflickr-photosets-getcontext-get
       parameters:
       - in: query
         name: api_key
@@ -360,7 +360,7 @@ paths:
       summary: Get Photo Set Photos
       description: Returns a list of photos in an album.
       operationId: getAlbumByID
-      x-api-path-slug: restmethodflickrphotosetsgetphotos-get
+      x-api-path-slug: restmethodflickr-photosets-getphotos-get
       parameters:
       - in: query
         name: api_key
@@ -376,7 +376,7 @@ paths:
       summary: Get Gallery Photos
       description: Returns a list of photos in a gallery.
       operationId: getGalleryPhotosByID
-      x-api-path-slug: restmethodflickrgalleriesgetphotos-get
+      x-api-path-slug: restmethodflickr-galleries-getphotos-get
       parameters:
       - in: query
         name: api_key
@@ -393,7 +393,7 @@ paths:
       summary: Photo Search
       description: Return a list of photos matching some criteria.
       operationId: getMediaBySearch
-      x-api-path-slug: restmethodflickrphotossearch-get
+      x-api-path-slug: restmethodflickr-photos-search-get
       parameters:
       - in: query
         name: accuracy
@@ -549,7 +549,7 @@ paths:
       summary: ""
       description: Returns photo sizes
       operationId: getPhotoSizesByID
-      x-api-path-slug: restmethodflickrphotosgetsizes-get
+      x-api-path-slug: restmethodflickr-photos-getsizes-get
       parameters:
       - in: query
         name: api_key
@@ -565,7 +565,7 @@ paths:
       summary: ""
       description: Echos the input parameters back in the response
       operationId: echo
-      x-api-path-slug: restmethodflickrtestecho-get
+      x-api-path-slug: restmethodflickr-test-echo-get
       parameters:
       - in: query
         name: api_key

@@ -11,8 +11,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "9"
 x-alexaRank: ""
 tags: Flickr
-created: "2018-05-21"
-modified: "2018-05-21"
+created: "2018-05-25"
+modified: "2018-05-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/apis.md
 specificationVersion: "0.14"
 apis:
@@ -26,9 +26,9 @@ apis:
   tags: Photos,Favorites
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrfavoritesgetlist-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-favorites-getlist-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrfavoritesgetlist-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-favorites-getlist-get-openapi.md
 - name: Flickr Get People Photos
   x-api-slug: flickr
   description: Return photos from the given user's photostream
@@ -38,9 +38,9 @@ apis:
   tags: Photos,People
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrpeoplegetphotos-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-people-getphotos-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrpeoplegetphotos-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-people-getphotos-get-openapi.md
 - name: Flickr Get Photo Sets
   x-api-slug: flickr
   description: Returns the albums belonging to the specified user
@@ -50,9 +50,9 @@ apis:
   tags: Photos
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosetsgetlist-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photosets-getlist-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosetsgetlist-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photosets-getlist-get-openapi.md
 - name: Flickr Get Favorite Context
   x-api-slug: flickr
   description: Returns next and previous favorites for a photo in a user's favorites
@@ -62,9 +62,9 @@ apis:
   tags: Photos,Favorites
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrfavoritesgetcontext-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-favorites-getcontext-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrfavoritesgetcontext-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-favorites-getcontext-get-openapi.md
 - name: Flickr Get Groups
   x-api-slug: flickr
   description: Get information about a group
@@ -74,9 +74,9 @@ apis:
   tags: Photos,Groups
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsgetinfo-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-groups-getinfo-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsgetinfo-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-groups-getinfo-get-openapi.md
 - name: Flickr Get Group Pool Photos
   x-api-slug: flickr
   description: Returns a list of pool photos for a given group
@@ -86,9 +86,9 @@ apis:
   tags: Photos,Groups
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupspoolsgetphotos-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-groups-pools-getphotos-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupspoolsgetphotos-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-groups-pools-getphotos-get-openapi.md
 - name: Flickr Get Group Topic List
   x-api-slug: flickr
   description: Get a list of discussion topics in a group.
@@ -98,9 +98,9 @@ apis:
   tags: Photos,Groups
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsdiscusstopicsgetlist-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-groups-discuss-topics-getlist-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsdiscusstopicsgetlist-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-groups-discuss-topics-getlist-get-openapi.md
 - name: Flickr Get Group Replies
   x-api-slug: flickr
   description: Get information on a group topic reply
@@ -110,9 +110,9 @@ apis:
   tags: Photos,Groups
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsdiscussrepliesgetinfo-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-groups-discuss-replies-getinfo-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsdiscussrepliesgetinfo-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-groups-discuss-replies-getinfo-get-openapi.md
 - name: Flickr Get Group Topic Info
   x-api-slug: flickr
   description: Get information about a group discussion topic
@@ -122,9 +122,9 @@ apis:
   tags: Photos,Groups
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsdiscusstopicsgetinfo-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-groups-discuss-topics-getinfo-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupsdiscusstopicsgetinfo-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-groups-discuss-topics-getinfo-get-openapi.md
 - name: Flickr Get Group Pools
   x-api-slug: flickr
   description: Returns next and previous photos for a photo in a group pool
@@ -134,9 +134,9 @@ apis:
   tags: Photos,Groups
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupspoolsgetcontext-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-groups-pools-getcontext-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgroupspoolsgetcontext-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-groups-pools-getcontext-get-openapi.md
 - name: Flickr Get Photo Lists
   x-api-slug: flickr
   description: Returns next and previous photos in a photo list
@@ -146,9 +146,9 @@ apis:
   tags: Photos,Lists
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotolistgetcontext-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photolist-getcontext-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotolistgetcontext-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photolist-getcontext-get-openapi.md
 - name: Flickr Get Photos
   x-api-slug: flickr
   description: Returns next and previous photos for a photo in a photostream
@@ -158,9 +158,9 @@ apis:
   tags: Photos
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetcontext-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photos-getcontext-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetcontext-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photos-getcontext-get-openapi.md
 - name: Flickr Get Photo Licenses
   x-api-slug: flickr
   description: Fetches a list of available photo licenses for Flickr
@@ -170,9 +170,9 @@ apis:
   tags: Photos,Search
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotoslicensesgetinfo-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photos-licenses-getinfo-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotoslicensesgetinfo-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photos-licenses-getinfo-get-openapi.md
 - name: Flickr Get People
   x-api-slug: flickr
   description: Returns a person
@@ -182,9 +182,9 @@ apis:
   tags: Photos,People
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrpeoplegetinfo-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-people-getinfo-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrpeoplegetinfo-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-people-getinfo-get-openapi.md
 - name: Flickr Get Photo Exif
   x-api-slug: flickr
   description: Retrieves a list of EXIF/TIFF/GPS tags for a given photo. The calling
@@ -195,9 +195,9 @@ apis:
   tags: Photos
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetexif-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photos-getexif-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetexif-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photos-getexif-get-openapi.md
 - name: Flickr Get Photo
   x-api-slug: flickr
   description: Returns a photo
@@ -207,9 +207,9 @@ apis:
   tags: Photos,Licensing
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetinfo-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photos-getinfo-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetinfo-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photos-getinfo-get-openapi.md
 - name: Flickr Get Photo Set
   x-api-slug: flickr
   description: Returns next and previous photos for a photo in a set
@@ -219,9 +219,9 @@ apis:
   tags: Photos
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosetsgetcontext-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photosets-getcontext-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosetsgetcontext-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photosets-getcontext-get-openapi.md
 - name: Flickr Get Photo Set Photos
   x-api-slug: flickr
   description: Returns a list of photos in an album.
@@ -231,9 +231,9 @@ apis:
   tags: Photos
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosetsgetphotos-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photosets-getphotos-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosetsgetphotos-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photosets-getphotos-get-openapi.md
 - name: Flickr Get Gallery Photos
   x-api-slug: flickr
   description: Returns a list of photos in a gallery.
@@ -243,9 +243,9 @@ apis:
   tags: Photos,Galleries
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgalleriesgetphotos-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-galleries-getphotos-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrgalleriesgetphotos-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-galleries-getphotos-get-openapi.md
 - name: Flickr Photo Search
   x-api-slug: flickr
   description: Return a list of photos matching some criteria.
@@ -255,9 +255,9 @@ apis:
   tags: Photos
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotossearch-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photos-search-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotossearch-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photos-search-get-openapi.md
 - name: Flickr Upload Photo
   x-api-slug: flickr
   description: Uploads a new photo to Flickr
@@ -279,9 +279,9 @@ apis:
   tags: ~
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetsizes-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photos-getsizes-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrphotosgetsizes-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-photos-getsizes-get-openapi.md
 - name: 'Flickr '
   x-api-slug: flickr
   description: Echos the input parameters back in the response
@@ -291,9 +291,9 @@ apis:
   tags: ~
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrtestecho-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-test-echo-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickrtestecho-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/flickr/master/_listings/flickr/restmethodflickr-test-echo-get-openapi.md
 - name: 'Flickr '
   x-api-slug: flickr
   description: Returns an oauth token and oauth token secret

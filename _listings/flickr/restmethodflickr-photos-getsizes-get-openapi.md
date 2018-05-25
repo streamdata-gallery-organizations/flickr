@@ -3,8 +3,8 @@ swagger: "2.0"
 x-collection-name: Flickr
 x-complete: 0
 info:
-  title: Flickr Upload Photo
-  description: Uploads a new photo to Flickr
+  title: 'Flickr '
+  description: Returns photo sizes
   termsOfService: https://www.flickr.com/services/api/tos/
   version: 1.0.0
 host: api.flickr.com
@@ -544,6 +544,22 @@ paths:
       tags:
       - Photo
       - Upload
+  /rest?method=flickr.photos.getSizes:
+    get:
+      summary: ""
+      description: Returns photo sizes
+      operationId: getPhotoSizesByID
+      x-api-path-slug: restmethodflickr-photos-getsizes-get
+      parameters:
+      - in: query
+        name: api_key
+      - in: query
+        name: photo_id
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

@@ -3,8 +3,8 @@ swagger: "2.0"
 x-collection-name: Flickr
 x-complete: 0
 info:
-  title: Flickr Upload Photo
-  description: Uploads a new photo to Flickr
+  title: Flickr Photo Search
+  description: Return a list of photos matching some criteria.
   termsOfService: https://www.flickr.com/services/api/tos/
   version: 1.0.0
 host: api.flickr.com
@@ -509,41 +509,6 @@ paths:
           description: OK
       tags:
       - Photos
-  /upload:
-    post:
-      summary: Upload Photo
-      description: Uploads a new photo to Flickr
-      operationId: uploadPhoto
-      x-api-path-slug: upload-post
-      parameters:
-      - in: formData
-        name: api_key
-      - in: formData
-        name: content_type
-      - in: formData
-        name: description
-      - in: formData
-        name: hidden
-      - in: formData
-        name: is_family
-      - in: formData
-        name: is_friend
-      - in: formData
-        name: is_public
-      - in: formData
-        name: photo
-      - in: formData
-        name: safety_level
-      - in: formData
-        name: tags
-      - in: formData
-        name: title
-      responses:
-        200:
-          description: OK
-      tags:
-      - Photo
-      - Upload
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
